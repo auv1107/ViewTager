@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <com.sctdroid.app.viewtager.SwitchScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/header_scrollview">
+    </com.sctdroid.app.viewtager.SwitchScrollViewPager>
+
+    <HorizontalScrollView
+        android:id="@+id/header_scrollview"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none"
+        android:overScrollMode="always" >
+        <com.sctdroid.app.viewtager.AdaptableRadioGroup
+            android:id="@+id/interest_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </com.sctdroid.app.viewtager.AdaptableRadioGroup>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/header_top_divider_line"
+        android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:layout_alignTop="@+id/header_scrollview"
+        android:background="#0c000000"
+        android:layout_below="@+id/header_scrollview"/>
+    <View
+        android:id="@+id/header_divider_line"
+        android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:background="#0c000000"
+        android:layout_below="@+id/header_scrollview"/>
+</RelativeLayout>
