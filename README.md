@@ -16,7 +16,28 @@
 
 ## 2. 用法
 
-### 2.1 添加布局
+### 2.1 引用
+
+```
+# 项目 build.gradle
+
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+
+# 模块 build.gradle
+
+dependencies {
+    compile 'com.github.User:Repo:Tag'
+}
+
+```
+
+### 2.2 添加布局
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
@@ -32,7 +53,7 @@
 </FrameLayout>
 ```
 
-### 2.2 初始化数据
+### 2.3 初始化数据
 主要使用两个方法添加适配器
 
 ```
