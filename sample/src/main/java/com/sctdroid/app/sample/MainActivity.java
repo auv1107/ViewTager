@@ -2,10 +2,9 @@ package com.sctdroid.app.sample;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.view.PagerAdapter;
+import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.sctdroid.app.viewtager.RadioAdapter;
-import com.sctdroid.app.viewtager.SwitchScrollViewPager;
 import com.sctdroid.app.viewtager.ViewTager;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,29 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 radioButton.setButtonDrawable(null);
 
                 return radioButton;
-            }
-        });
-
-        mViewTager.setViewPagerHeightDelegate(new SwitchScrollViewPager.ViewHeightDelegate() {
-            @Override
-            public int getMeasuredHeight() {
-                return 0;
-            }
-        });
-        mViewTager.setViewPagerOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
             }
         });
 
