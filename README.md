@@ -32,7 +32,7 @@ allprojects {
 # 模块 build.gradle
 
 dependencies {
-    compile 'com.github.User:Repo:Tag'
+    compile 'com.github.auv1107:ViewTager:a73de7facf'
 }
 
 ```
